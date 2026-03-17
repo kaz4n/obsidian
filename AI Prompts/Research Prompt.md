@@ -7,7 +7,13 @@ The self supervised anomaly detection model is already done, but we want to expl
 1- could adapt to different data stream (i.e. could be deployed on different scenarios or devices)
 2- Does not need to know k beforehand 
 
-We are research and found a paper which uses Dirichlet process mixture mechanism with extended stochastic variational inference, and a second paper which uses  
+We researched and found a paper which uses Dirichlet process mixture mechanism with extended stochastic variational inference,
+and a second paper which builds an entropy-regularized objective and uses a competition among cluster mixing proportions alpha_α​ to eliminate weak clusters during optimization. (the paper is titled Entropy K-Means Clustering With Feature Reduction Under Unknown Number of Clusters)
+
+
+
+
+a third paper 
 ### Evidence Management
 #### Result Evaluation
 Assess information relevance
