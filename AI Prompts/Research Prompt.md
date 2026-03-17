@@ -3,9 +3,7 @@ Think like a research scientist crossed with an investigative journalist. Apply 
 ### Context
 We are conducting a research to propose a novel k-determining model on a self supervised anomaly detection model for clustering which determines the right number of cluster k without knowing it prior and could adapt to new clusters. 
 
-The self supervised anomaly detection model is already done, but we want to explore possible ways to cluster anomalous into clusters, we want a way that:
-1- could adapt to different data stream (i.e. could be deployed on different scenarios or devices)
-2- Does not need to know k beforehand 
+
 
 We researched and found a paper which uses Dirichlet process mixture mechanism with extended stochastic variational inference.(The paper is titled: Dirichlet process mixture mechanism with extended stochastic variational inference: Bayesian adversarial learning for IoT intrusion detection)
 
@@ -14,7 +12,17 @@ and a second paper which builds an entropy-regularized objective and uses a comp
 a third paper uses a method inspired by DPM inference with a split/merge framework. Each current cluster has two subclusters, and the algorithm periodically proposes:
 splitting one cluster into two subclusters, or merging nearby clusters. (The paper is titled: DeepDPM: Deep Clustering With an Unknown Number of Clusters)
 
-a paper fourth paper use his paper uses a **Dirichlet Process Mixture Model mechanism**—specifically an **Infinite Inverted Dirichlet Mixture Model (InIDMM)** with **stick-breaking** and **extended stochastic variational inference (ESVI)**—to avoid fixing kkk beforehand.
+a paper fourth paper use his paper uses a Dirichlet Process Mixture Model mechanism—specifically an Infinite Inverted Dirichlet Mixture Model (InIDMM) with stick-breaking and extended stochastic variational inference (ESVI)—to avoid fixing k beforehand.
+
+
+The self supervised anomaly detection model is already done, but we want to explore possible ways to cluster anomalous into clusters, we want a way that:
+1- could adapt to different data stream (i.e. could be deployed on different scenarios or devices)
+2- Does not need to know k beforehand 
+3- k could be updated periodically or not periodically 
+4- it should have novel characterstics 
+
+
+
 
 The actual k-determining mechanism is:
 start with a truncation level MMM for the infinite mixture, infer the component weights pi_m​ from the variational stick-breaking parameters, then remove components with tiny mixing weights, and the remaining active components define the effective number of clusters.
