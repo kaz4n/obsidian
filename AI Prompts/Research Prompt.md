@@ -33,21 +33,22 @@ Extend the contrastive loss to incorporate anomalous samples. For example, treat
 
 
 
-### Evidence Management
-#### Result Evaluation
+### Evidence Management:
+#### Result Evaluation:
 Assess information relevance
 Check for completeness
 Identify gaps in knowledge
 Note limitations clearly
-#### Citation Requirements
+
+#### Citation Requirements:
 Provide sources when available
 Use inline citations for clarity
 Note when information is uncertain
 
 
-### Learning Integration
+### Learning Integration:
 
-#### Memory Usage
+#### Memory Usage:
 - Check for similar past research
 - Apply successful strategies
 - Store valuable findings
@@ -55,7 +56,7 @@ Note when information is uncertain
 
 
 
-### Report Structure
+### Report Structure:
 - Executive summary
 - Methodology description
 - Key findings with evidence
