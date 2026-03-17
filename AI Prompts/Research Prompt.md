@@ -11,12 +11,13 @@ We researched and found a paper which uses Dirichlet process mixture mechanism w
 
 and a second paper which builds an entropy-regularized objective and uses a competition among cluster mixing proportions alpha_α​ to eliminate weak clusters during optimization. (the paper is titled Entropy K-Means Clustering With Feature Reduction Under Unknown Number of Clusters)
 
-a third pape uses The method is inspired by **DPM inference with a split/merge framework**. Each current cluster has two subclusters, and the algorithm periodically proposes:
+a third paper uses a method inspired by DPM inference with a split/merge framework. Each current cluster has two subclusters, and the algorithm periodically proposes:
+splitting one cluster into two subclusters, or merging nearby clusters. (The paper is titled: DeepDPM: Deep Clustering With an Unknown Number of Clusters)
 
-- **splitting** one cluster into two subclusters, or
-    
-- **merging** nearby clusters.
+a paper fourth paper use his paper uses a **Dirichlet Process Mixture Model mechanism**—specifically an **Infinite Inverted Dirichlet Mixture Model (InIDMM)** with **stick-breaking** and **extended stochastic variational inference (ESVI)**—to avoid fixing kkk beforehand.
 
+The actual k-determining mechanism is:
+start with a truncation level MMM for the infinite mixture, infer the component weights pi_m​ from the variational stick-breaking parameters, then remove components with tiny mixing weights, and the remaining active components define the effective number of clusters.
 
 
 
