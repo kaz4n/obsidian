@@ -19,7 +19,13 @@ The self supervised anomaly detection model is already done, but we want to expl
 1- could adapt to different data stream (i.e. could be deployed on different scenarios or devices)
 2- Does not need to know k beforehand 
 3- k could be updated periodically or not periodically 
-4- it should have novel characterstics 
+4- it should have novel characteristics
+
+
+I attached our paper that implements a two stage model which uses GAN and contrastive learning (the paper it titled: Intrusion Detection in Resource-Constrained IoT with GAN-Based Anomaly Detection and Contrastive Learning), the model is fine and we want to extend the abnormal data head to determine the different abnormal data.
+
+
+Explore non explored method and gaps in 4 papers provided above, moreover i have 
 
 
 
@@ -29,7 +35,7 @@ start with a truncation level MMM for the infinite mixture, infer the component 
 
 
 
-a third paper 
+
 ### Evidence Management
 #### Result Evaluation
 Assess information relevance
