@@ -1,0 +1,26 @@
+Possible solutions:
+**Dirichlet Processes (DPs)** are widely used in AI, particularly in **Bayesian nonparametric models**, where they enable flexible, data-driven modeling without pre-specifying the number of components or clusters.
+
+
+https://www.sciencedirect.com/science/article/abs/pii/S0925231225030462: 
+No AI, just DP. 
+https://openaccess.thecvf.com/content/CVPR2022/papers/Ronen_DeepDPM_Deep_Clustering_With_an_Unknown_Number_of_Clusters_CVPR_2022_paper.pdf : AI with unknown K clustering 
+
+https://papers.ssrn.com/sol3/Delivery.cfm/39b3431a-cdcb-4524-b0fd-b2f6904a5819-MECA.pdf?abstractid=4826651&mirid=1&__cf_chl_tk=yOIhTBvkjVeGUYdc2M1o2s0vNr8vY8WfrLf1vUzoDQg-1771335093-1.0.1.1-est6BzEm82cNfa_YAdADLGMJfA3Vq0TKTd.V3yNbdLA
+
+https://arxiv.org/pdf/2401.04741
+
+
+
+
+Very high accuracy :
+https://pdf.sciencedirectassets.com/271597/1-s2.0-S0925231225X00503/1-s2.0-S0925231225030462/main.pdf?X-Amz-Security-Token=IQoJb3JpZ2luX2VjELD%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJFMEMCHxi04baNIgqUuCN7MJYkMN3MNEfce5kIjioRT4KYXn0CIFonlagGMFeTunRZuaMJXIjRfnY0EA6HpHXfE7NQQZIRKrMFCHkQBRoMMDU5MDAzNTQ2ODY1Igw2HjgfKRmK7kOSBPMqkAVjrANcsNgfd1%2BGdqjT8CgvVsyb%2FbDK46SfEsHAK8nprxTY1f5QHMTPXxzSDJJq9irs2ed2ym0uveYAp4AOkRWfqGqfEylINpDrJeb1wyt43qxgNPSWS4MTn2oogxp%2BeKRKN98%2FmWY09%2Bt34iy%2FpgUl1W2vVHaeJ7fZuIE9LLJmyeonwbD93ZBtB63GdYocLAUW%2BWw21R3xDX7g9jmkk3Igbk3jHi%2BIOeNKGiZQPd%2FhJKEbnu2BoMjpEdcSKLaMuPa%2BnxtiYfIKlHRkhbSn%2BnzlxAzy50l855r6QoGLLlIc5tLNPivkaRPKlNdqBkj4xY6%2BkhfaKGj6JYwPltrPBbMci6YmeyUFqGtubXVbdH7QRpLQpFIZWdZ75%2B8EIsghL6HYM8%2FBfZneeNSsREc5dOQzkfXby4BHl88b%2BefODBlsvCVk%2BRg9PMmFBXz9Hl4HC%2Bxpx3c7gs9aeHFlYwIBkuCii8Ndtr8I7SYIwfn9XvBS0ERagW5y1%2FH6O6P81sUE2SemJaIyBOLqEn5DxBCdGtROKrEbx4C%2FC6IWyfKaJW767ri9R%2BZvGbdsl8xnav5XgNEstxNPCGdWxSGLg%2FGbFfz8tQdDgfu1ouVMCtN46IzPuV27jYgf3KsqUWNc%2FULazfaASNGQlxEdj4ZmPeizYuW%2FrVlCnw2zUGz5XfPUK451xNpRRx4tkml%2BvsaMbkewnx3G%2BTgpDX5w3yYoLHUiW4oVhH3PwaaGZpf%2Fr0dQW%2FgzXMc9D3K7EvZCfKm4QwqbFKOfrHNqULrYIyHu21WT2q9PK7tCDhZ2yKdf5v6yweVb%2BE7k3dvaph7VvgqCI0tD%2Fvf%2Bdici24bp1LqoFFkXFwhBJ%2B9O7AEFghKyX8gek6aupzDY9drMBjqzAT8ol6ST%2FDDXhdcnAfFVcCDrNzJQn0D4XES9SgJN6U6Xim5zhujlG24ABursIHKFo1MRyJ7T3ZT7DZkh7v6Gvfr8h91hlN2Avn129agxQ0R86Q38oaKch5Ncrmty0kkd%2FURzNxjG3tlQi2XdsIzJJz4Irr9CBskMNC16ZnmblZSdkdnq07ANFWvmipBdEub89E5psCj4O8IqUHHuNbWkwkSFZWI0YTYZ6zDcPena4MF7xUOg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260219T080842Z&X-Amz-SignedHeaders=host&X-Amz-Expires=300&X-Amz-Credential=ASIAQ3PHCVTYTM7XEV6K%2F20260219%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=fb6cddd37798c316340cb5a33a203fb8525148025e382d54bd683a4c448d3f76&hash=ff96a5b66da9235dc4ea2c45f284d00de2c6bde8b6fbae02851bdec0baf81d50&host=68042c943591013ac2b2430a89b270f6af2c76d8dfd086a07176afe7c76c2c61&pii=S0925231225030462&tid=spdf-3c6476f7-4c06-48d2-99de-d0f1db876190&sid=fed835464f3bd94094487423daef875e2a10gxrqb&type=client&tsoh=d3d3LXNjaWVuY2VkaXJlY3QtY29tLmtoYWxpZmEuaWRtLm9jbGMub3Jn&rh=d3d3LXNjaWVuY2VkaXJlY3QtY29tLmtoYWxpZmEuaWRtLm9jbGMub3Jn&ua=0c095e065756555052&rr=9d044722aa577638&cc=nl&kca=eyJrZXkiOiJtdC9wclU4ZUpHTG82eVNtOUVsUVBabWxWdEprTHNqTTJWbTNia2xuYzQ3STd4MGY2UTJEMjl2dU1FOCtTQ1Q3YUU0dVYvMDBmSUNWMk1ROGd1dkh5bFMzNVFsbk1qZ3RGbU9KQVpPRDkvYTJTc29QRlVXdnhmR1A1UXVmaWdUcnJnaGZMN2p5d29ITnZ1M3M0QTVYNkVFbElXV2loei90TTVOUU5kRHk1YmswSE4rMyIsIml2IjoiZWZmNGNhYTYyOTAzNTU2MzRjNzVkMTdlZTQ2NzQ5NzkifQ==_1771488542434
+
+why?
+
+
+Search:
+usage of DP with AI,
+and
+Contrastive Clustering(see this later):
+ Extend the contrastive loss to incorporate anomalous samples. For example, treat each anomaly (or time-window of anomalies) as its own class in a self-supervised contrastive scheme (similar to “instance discrimination”). This might encourage anomalies of the same type (if they share features) to be drawn together in the embedding space, automatically revealing clusters. Alternatively, one could generate _pseudo-negative_ pairs of anomalies: e.g. pair anomalies close in feature space as “positive” pairs in contrastive training, driving the model to learn anomaly clusters.
