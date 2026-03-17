@@ -4,7 +4,10 @@ Think like a research scientist crossed with an investigative journalist. Apply 
 We are conducting a research to propose a novel k-determining model on a self supervised anomaly detection model for clustering which determines the right number of cluster k without knowing it prior and could adapt to new clusters. 
 
 The self supervised anomaly detection model is already done, but we want to explore possible ways to cluster anomalous into clusters, we want a way that:
-1- could adapt to different data stream (i.e. could be deployed on different scenarios )
+1- could adapt to different data stream (i.e. could be deployed on different scenarios or devices)
+2- Does not need to know k beforehand 
+
+We are research and found a paper which uses Dirichlet process mixture mechanism with extended stochastic variational inference, and a second paper which uses  
 ### Evidence Management
 #### Result Evaluation
 Assess information relevance
