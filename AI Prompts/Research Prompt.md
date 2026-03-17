@@ -7,8 +7,15 @@ The self supervised anomaly detection model is already done, but we want to expl
 1- could adapt to different data stream (i.e. could be deployed on different scenarios or devices)
 2- Does not need to know k beforehand 
 
-We researched and found a paper which uses Dirichlet process mixture mechanism with extended stochastic variational inference,
+We researched and found a paper which uses Dirichlet process mixture mechanism with extended stochastic variational inference.(The paper is titled: Dirichlet process mixture mechanism with extended stochastic variational inference: Bayesian adversarial learning for IoT intrusion detection)
+
 and a second paper which builds an entropy-regularized objective and uses a competition among cluster mixing proportions alpha_α​ to eliminate weak clusters during optimization. (the paper is titled Entropy K-Means Clustering With Feature Reduction Under Unknown Number of Clusters)
+
+a third pape uses The method is inspired by **DPM inference with a split/merge framework**. Each current cluster has two subclusters, and the algorithm periodically proposes:
+
+- **splitting** one cluster into two subclusters, or
+    
+- **merging** nearby clusters.
 
 
 
