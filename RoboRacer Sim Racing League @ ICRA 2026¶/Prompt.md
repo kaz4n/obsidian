@@ -1,2 +1,4 @@
 RoboRacer Autonomous Racing is a semi-regular competition organized by an international community of researchers, engineers, and autonomous systems enthusiasts. The teams participating in the 27th RoboRacer Autonomous Racing Competition at ICRA 2026 will write software for a 1:10 scaled autonomous racecar to fulfill the objectives of the competition: drive fast but don’t crash!
 
+
+These vehicles are simulated as a combination of rigid body and sprung mass representations with adequate attention to rigid body dynamics, suspension dynamics, actuator dynamics, and tire dynamics. Additionally, the simulator detects mesh-mesh interference and computes contact forces, frictional forces, momentum transfer, as well as linear and angular drag acting on the vehicle. Finally, being an autonomy-oriented digital twin, the simulator offers physically-based sensor simulation for proprioceptive as well as exteroceptive sensors on-board the virtual vehicle.
