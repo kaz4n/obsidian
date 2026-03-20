@@ -93,13 +93,13 @@ Make your app feel truly native by automatically adapting to user system setting
     - Implement `NativeTabs.BottomAccessory` within your root tab layout.
     - Place your custom view (e.g., a `Pressable` with album art and controls) inside this component.
     - This accessory will automatically minimize along with the tab bar.
-### **4. Zoom Transitions** 
+### **13. Zoom Transitions** 
 - **Summary:** Create continuous, interactive animations when navigating between images or thumbnails and detail screens.
 - **Guide:**
     - Wrap your navigation `Link` or `Pressable` with the `appleZoom` behavior.
     - On the destination screen, use `Link.AppleZoomTarget` on the component (e.g., the large image) that should be the focus of the transition.
     - This allows users to interrupt and drag the animation back.
-### **5. Form Sheets with Flex-1 Fix** 
+### **14. Form Sheets with Flex-1 Fix** 
 - **Summary:** Fix layout issues when pinning content to the bottom of native form sheets using standard CSS `flex: 1`.
 - **Guide:**
     - When presenting a screen as a `formSheet`, you can now use a view with `flex: 1` to containerize your content.
