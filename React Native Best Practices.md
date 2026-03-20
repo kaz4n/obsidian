@@ -43,7 +43,7 @@ If you are using Expo Router or React Navigation, your route files should only h
     - Extract screen content and business logic into separate component files within a `/components` or `/screens` directory.
     - This makes refactoring and reusing components much easier.
 
-### **6. Use `ignoreSafeArea` Property** (1:24)
+### **6. Use `ignoreSafeArea` Property** 
 
 If UI components are breaking or behaving strangely near the **keyboard** or screen edges, use this property to control how the _SwiftUI hosting view_ reacts.
 
@@ -55,26 +55,26 @@ Instead of manually calculating `height` or `width` for _SwiftUI_ views, which o
 
 - **Guide:** Remove manual styling (`width`, `height`, `flex`) from the `Host` component and simply add `matchContents={true}`. This tells the view to automatically size itself based on the native _SwiftUI_ content inside.
 
-### **8. Utilize `ReactNativeHostView`** (6:21)
+### **8. Utilize `ReactNativeHostView`** 
 
 When working inside a _SwiftUI_ or _Jetpack Compose_ context, standard _React Native_ views (``) might not render properly. Use the special host view to bridge them.
 
 - **Guide:** Import `ReactNativeHostView` from `expo-ui`. Wrap your standard _React Native_ components within this view to render them successfully inside native _SwiftUI_ containers.
 
 
-### **9. Centralize Your API Logic** (10:46)
+### **9. Centralize Your API Logic** 
 
 Avoid duplicating data fetching or state management logic across different platform implementations.
 
 - **Guide:** Create a **context provider** or a dedicated service file to handle fetching and logic. Import this shared logic into your specific iOS and Android components to maintain a single source of truth.
 
-### **10. Utilize Platform Colors** (12:13)
+### **10. Utilize Platform Colors** 
 
 Make your app feel truly native by automatically adapting to user system settings, including **light/dark mode** and **material colors** on Android.
 
 - **Guide:** Use the `color` utility from _Expo Router_ to access native system colors (e.g., `color.ios.systemBackground` or `color.android.dynamic.surface`). On Android, this will pull color palettes directly from the user's wallpaper.
 
-### **11. Native Tabs with System Behaviors** (0:17)
+### **11. Native Tabs with System Behaviors** 
 
 - **Summary:** Utilize the system tab bar on both iOS and Android to automatically support system-level behaviors like "liquid glass" and tab bar minimization on scroll.
 - **Guide:**
