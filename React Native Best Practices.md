@@ -73,3 +73,34 @@ Avoid duplicating data fetching or state management logic across different platf
 Make your app feel truly native by automatically adapting to user system settings, including **light/dark mode** and **material colors** on Android.
 
 - **Guide:** Use the `color` utility from _Expo Router_ to access native system colors (e.g., `color.ios.systemBackground` or `color.android.dynamic.surface`). On Android, this will pull color palettes directly from the user's wallpaper.
+
+### **11. Native Tabs with System Behaviors** (0:17)
+
+- **Summary:** Utilize the system tab bar on both iOS and Android to automatically support system-level behaviors like "liquid glass" and tab bar minimization on scroll.
+- **Guide:**
+    - In your **layout file**, configure your `Tabs` component.
+    - Use the `minimizeBehavior` prop to make the tab bar hide automatically when users scroll down.
+    - Use the `rollSearch` prop for special tabs (like a camera tab) to visually separate them from the rest of the tab bar.
+    - Manually set the `selected` prop to define the active state icon (e.g., `camera-fill`) versus the inactive state (`magnifyingglass`).
+### **12. Stack Toolbar API** 
+- **Summary:** Use native primitives to place buttons, menus, and spacers in the header or footer without relying on hacks.
+- **Guide:**
+    - Implement the `StackToolbar` component within your screen options.
+    - Use the `placement` prop to position items on the `left`, `right`, or `bottom` of the screen.
+    - Set the `tintColor` to match your app's theme to get the native glass effect on iOS 26.**3. Bottom Accessory (Mini Player)** 
+- **Summary:** Attach interactive components (like a music mini-player) that sit above the tab bar and animate smoothly.
+- **Guide:**
+    - Implement `NativeTabs.BottomAccessory` within your root tab layout.
+    - Place your custom view (e.g., a `Pressable` with album art and controls) inside this component.
+    - This accessory will automatically minimize along with the tab bar.
+### **4. Zoom Transitions** 
+- **Summary:** Create continuous, interactive animations when navigating between images or thumbnails and detail screens.
+- **Guide:**
+    - Wrap your navigation `Link` or `Pressable` with the `appleZoom` behavior.
+    - On the destination screen, use `Link.AppleZoomTarget` on the component (e.g., the large image) that should be the focus of the transition.
+    - This allows users to interrupt and drag the animation back.
+### **5. Form Sheets with Flex-1 Fix** 
+- **Summary:** Fix layout issues when pinning content to the bottom of native form sheets using standard CSS `flex: 1`.
+- **Guide:**
+    - When presenting a screen as a `formSheet`, you can now use a view with `flex: 1` to containerize your content.
+    - Pin action buttons or informational text to the bottom of the screen using standard flexbox alignment without worrying about layout jumps.
